@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+<table  class="table table-bordered"  id="myTable">
+<thead>
+<th>
+Name
+</th>
+<th>
+Age
+</th>
+<th>
+Number_of_Subjects
+</th>
+<th>
+Status
+</th>
+<th>
+Course_Type
+</th>
+<th>
+Actions
+</th>
+</thead>
+<tbody>
+</tbody>
+</table>
+<div  id="courseform">
+    <button  id="createCourse"  class="btn"> Create Course </button>
+</div>
+{% endblock %}
+
+{% block extrajs %}
+<script  src="{% static 'js/app.js' %}"></script>
+{% endblock %}
